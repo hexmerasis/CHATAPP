@@ -86,7 +86,8 @@ public class Client  {
 		if(cg == null)
 			System.out.println(msg);      // println in console mode
 		else
-			cg.append(msg + "\n");		// append to the ClientGUI JTextArea (or whatever)
+			cg.append(msg + "\n\n");
+			System.out.println(msg);// append to the ClientGUI JTextArea (or whatever)
 	}
 	
 	/*

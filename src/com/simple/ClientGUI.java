@@ -57,12 +57,12 @@ public class ClientGUI extends JFrame implements ActionListener {
 		label = new JLabel("Enter your username below", SwingConstants.CENTER);
 		northPanel.add(label);
 		tf = new JTextField("Anonymous");
-		tf.setBackground(Color.WHITE);
+		tf.setBackground(Color.LIGHT_GRAY);
 		northPanel.add(tf);
 		add(northPanel, BorderLayout.NORTH);
 
 		// The CenterPanel which is the chat room
-		ta = new JTextArea("Welcome to the Chat room\n", 80, 80);
+		ta = new JTextArea("Welcome to the Chat room\n", 20, 20);
 		JPanel centerPanel = new JPanel(new GridLayout(1,1));
 		centerPanel.add(new JScrollPane(ta));
 		ta.setEditable(false);
@@ -102,7 +102,7 @@ public class ClientGUI extends JFrame implements ActionListener {
 		login.setEnabled(true);
 		logout.setEnabled(false);
 		whoIsIn.setEnabled(false);
-		label.setText("Enter your username below");
+		//label.setText("Enter your username below");
 		tf.setText("Anonymous");
 		// reset port number and host name as a construction time
 		tfPort.setText("" + defaultPort);
